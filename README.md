@@ -11,7 +11,7 @@ It was released in May 2019.
 First download omni-9.0 tree:
 
 ```
-repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
+repo init -u git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-9.0
 ```
 Then add these string to .repo/manifests/remove.xml
 
@@ -19,9 +19,9 @@ Then add these string to .repo/manifests/remove.xml
 Then add these projects to .repo/local_manifests/roomservice.xml (If you don't have it, you can add them to .repo/manifest.xml): 
 
 ```xml
-<remote name="git"
-	fetch="https://git.linuxandria.com" />
-<project name="unixandria-git/pbrp_device_oneplus_guacamole_TWRP" path="device/oneplus/guacamole" remote="git" revision="android-9.0" />
+<remote name="device"
+	fetch="https://github.com/PitchBlackRecoveryProject/" />
+<project name="android_device_oneplus_guacamole-pbrp" path="device/oneplus/guacamole" remote="git" revision="android-9.0" />
 ```
 
 Now you can sync your source:
@@ -30,7 +30,7 @@ Now you can sync your source:
 repo sync -j$(nproc --all)
 ```
 
-To auotomatic make the twrp installer, you need to import this commit in the build/make path: https://gerrit.omnirom.org/#/c/android_build/+/33182/
+To auotomatic make the PBRP installer, you need to import this commit in the build/make path: https://gerrit.omnirom.org/#/c/android_build/+/33182/
 
 Finally execute these:
 
