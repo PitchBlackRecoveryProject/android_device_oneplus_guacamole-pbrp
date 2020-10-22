@@ -21,7 +21,7 @@ Then add these projects to .repo/local_manifests/roomservice.xml (If you don't h
 ```xml
 <remote name="device"
 	fetch="https://github.com/PitchBlackRecoveryProject/" />
-<project name="android_device_oneplus_guacamole-pbrp" path="device/oneplus/guacamole" remote="git" revision="android-9.0" />
+<project name="android_device_oneplus_guacamole-pbrp" path="device/oneplus/guacamole" remote="device" revision="android-9.0" />
 ```
 
 Now you can sync your source:
