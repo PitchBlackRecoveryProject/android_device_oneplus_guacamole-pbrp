@@ -11,7 +11,7 @@ jobs:
       CODENAME: 'guacamole'
       FLAVOR: 'eng'
       #TEST_BUILD: 'true'
-      OFFICIAL_BUILD: 'true'
+      PB_OFFICIAL: 'true'
       CHANGELOG: |
         - Initial Official Release for OnePlus 7 Pro
     working_directory: /home/builder/pitchblack
